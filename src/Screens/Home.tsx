@@ -5,6 +5,7 @@ import {
     Image,
     StyleSheet,
     Text,
+    TouchableOpacity,
     View,
 } from 'react-native';
 import axios, { AxiosResponse } from 'axios';
@@ -53,12 +54,13 @@ const Home: FC<Props> = (props) => {
   return (
       
         <View style={styles.container}>
-            <Text> Welcome </Text>
             <Image style={styles.image} resizeMode='contain' source={image} />
+
             <ActivityIndicator
                 animating={isLoading} size="large" color="lightseagreen"
                 style={styles.loadingAnimationContainer}
             />
+            
             <FlatList
                     style={styles.listContainer}
                     data={stories ? stories : []}
@@ -88,7 +90,8 @@ const Home: FC<Props> = (props) => {
                             </ListItem.Content>
                         </ListItem>
                     )}
-            /> 
+            />
+            
         </View>
       
   );
