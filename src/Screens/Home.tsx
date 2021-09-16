@@ -27,14 +27,14 @@ const Home: FC<Props> = (props) => {
                     
                     var story: Story[] = [];
                     
-                    for(let i=0; i<10; i++) {
+                    for(let i=0; i<id.length; i++) {
                       let url = "https://hacker-news.firebaseio.com/v0/item/" + id[i] + ".json"
                       axios.get<Story[]>(url)
                       .then((response: AxiosResponse) => {
                         
                       story.push(response.data);
                       
-                        if(story.length === 9) {
+                        if(story.length === id.length - 1) {
                           setStories(story);
                           setLoading(false);
                         }
