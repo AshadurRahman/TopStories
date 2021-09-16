@@ -4,7 +4,6 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import Home from './../Screens/Home';
 import StorryDetails from '../Screens/StoryDetails';
-import WebViews from '../Screens/WebView';
 
 const Stack = createStackNavigator();
 
@@ -23,13 +22,6 @@ const MainStackNavigator: React.FC = () => {
                     name='StoryDetails'
                     component={StorryDetails}
                     options={{ title: 'Story Details'}}
-                    // options={{ title: 'Story Details', headerLeft: () => null}}
-                />
-
-                <Stack.Screen
-                    name='WebViews'
-                    component={WebViews}
-                    options={{ title: 'Web Views'}}
                 />
 
             </Stack.Navigator>
