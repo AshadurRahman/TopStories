@@ -1,4 +1,7 @@
-import { StyleSheet } from 'react-native';
+import { Dimensions, StyleSheet } from 'react-native';
+
+const deviceHeight = Dimensions.get('window').height;
+const deviceWidth = Dimensions.get('window').width;
 
 const styles = StyleSheet.create({
   container: {
@@ -42,6 +45,10 @@ const styles = StyleSheet.create({
   floatIcon: {
     fontWeight: 'bold',
     fontSize: 28,
+  },
+  webView: {
+    width: deviceWidth,
+    height: deviceHeight
   }
 });
 
