@@ -5,7 +5,9 @@
 To Run the project first you you need to install the node modules.
 Make sure you have node installed in your machine.
 
-run in the project directory # $ npm install
+run in the project directory the following command: 
+
+$ npm install
 
 # Android
 
