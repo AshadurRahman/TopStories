@@ -5,7 +5,10 @@ import { Props } from './../Components/Interfaces';
 const WebViews: FC<Props> = (props) => {
 
     return (
-        <WebView source={{ uri: props.route.params.Url }} />
+        <WebView
+            originWhitelist={['*']}
+            source={{ uri: props.route.params.Url }}
+        />
     )
 }
 
