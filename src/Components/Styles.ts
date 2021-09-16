@@ -11,17 +11,17 @@ const styles = StyleSheet.create({
     fontWeight: '400',
   },
   listContainer: {
-        width: '100%'
-    },
-  list: {
       width: '100%',
-      paddingLeft: ("2%")
+  },
+  list: {
+    width: '100%',
+    paddingLeft: ("2%"),
   },
   loadingAnimationContainer: {
-        position: 'absolute',
-        left: 0,
-        right: 0,
-        top: ('40%'),
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: ('40%'),
   },
   image: { 
     width: '100%',
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     right: '10%',
     borderRadius: 100,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   floatIcon: {
     fontWeight: 'bold',

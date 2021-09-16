@@ -8,11 +8,14 @@ const StorryDetails: FC<Props> = (props) => {
 
   return (
       <View style={styles.container}>
-        <Text style={styles.sectionDescription}>Title: {props.route.params.Title}</Text> 
-        <Button title='Open Webview'
+        <Text style={styles.sectionDescription}>Title: {props.route.params.Title}</Text>
+        
+        <Button
+          title='Open Webview'
           onPress={() => navigation.navigate('WebViews', {
-                                  Url: props.route.params.Url,
-                              })}/>
+                Url: props.route.params.Url,
+            })}
+        />
         
         <TouchableOpacity style={styles.floatingButton} onPress={() => navigation.navigate('Home')} >
           <Text style={styles.floatIcon}> {'<'} </Text>
