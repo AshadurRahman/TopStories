@@ -3,9 +3,7 @@ import {
     ActivityIndicator,
     FlatList,
     Image,
-    StyleSheet,
     Text,
-    TouchableOpacity,
     View,
 } from 'react-native';
 import axios, { AxiosResponse } from 'axios';
@@ -20,10 +18,6 @@ const Home: FC<Props> = (props) => {
     const [isLoading, setLoading] = useState<boolean>(true);
 
     const image = require('../assets/News.png');
-
-    const navigatePath = () => {
-        navigation.navigate('StoryDetails');
-    };
 
     useEffect(() => {
             axios.get('https://hacker-news.firebaseio.com/v0/topstories.json')
@@ -60,7 +54,7 @@ const Home: FC<Props> = (props) => {
                 animating={isLoading} size="large" color="lightseagreen"
                 style={styles.loadingAnimationContainer}
             />
-            
+
             <FlatList
                     style={styles.listContainer}
                     data={stories ? stories : []}
@@ -76,7 +70,6 @@ const Home: FC<Props> = (props) => {
                             }}
                         >
                             <ListItem.Content>
-
                                     <View style={styles.list}>
                                         <ListItem.Title>
 
@@ -86,14 +79,11 @@ const Home: FC<Props> = (props) => {
                                             
                                         </ListItem.Title>
                                     </View>
-                                
                             </ListItem.Content>
                         </ListItem>
                     )}
             />
-            
         </View>
-      
   );
 };
 
