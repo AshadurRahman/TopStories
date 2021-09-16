@@ -8,13 +8,15 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: 'black',
   },
   sectionDescription: {
     fontSize: 18,
     fontWeight: 'bold',
     color: 'white',
     backgroundColor: 'black',
-    padding: '1%'
+    padding: '1%',
+    marginBottom: '1%'
   },
   listContainer: {
       width: '100%',
@@ -36,7 +38,7 @@ const styles = StyleSheet.create({
   },
   floatingButton: {
     backgroundColor: 'lightseagreen',
-    width: '20%',
+    width: '15%',
     height: '10%',
     position: 'absolute',
     bottom: '10%',
@@ -47,7 +49,7 @@ const styles = StyleSheet.create({
   },
   floatIcon: {
     fontWeight: 'bold',
-    fontSize: 28,
+    fontSize: 38,
   },
   webView: {
     width: deviceWidth,
