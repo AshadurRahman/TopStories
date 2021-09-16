@@ -11,7 +11,10 @@ const styles = StyleSheet.create({
   },
   sectionDescription: {
     fontSize: 18,
-    fontWeight: '400',
+    fontWeight: 'bold',
+    color: 'white',
+    backgroundColor: 'black',
+    padding: '1%'
   },
   listContainer: {
       width: '100%',
