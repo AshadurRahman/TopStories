@@ -53,6 +53,7 @@ const Home: FC<Props> = (props) => {
   return (
       
         <View style={styles.container}>
+            <Text> Welcome </Text>
             <Image style={styles.image} resizeMode='contain' source={image} />
             <ActivityIndicator
                 animating={isLoading} size="large" color="lightseagreen"
